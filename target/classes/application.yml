@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      uri : mongodb+srv://Narendra:1234567890@cluster0.bnbn0m3.mongodb.net/?retryWrites=true&w=majority
+      database: Item
