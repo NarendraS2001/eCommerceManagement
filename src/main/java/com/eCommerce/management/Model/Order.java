@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.List;
 
 
 @Data
@@ -18,9 +19,10 @@ import java.util.Date;
 public class Order {
     @Id
     private String orderId;
-    private String itemId;
-    private String itemName;
-    private int quantity;
+    //    private String itemId;
+//    private String itemName;
+//    private int quantity;
+    private List<Inventory> inventories;
     private OrderType orderType;
     private LocalDateTime localDateTime;
 
